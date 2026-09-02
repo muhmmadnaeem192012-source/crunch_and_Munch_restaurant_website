@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Delight Restaurant</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background: #fff8f0; color: #333; }
+        
+        /* Header */
+        header { background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070') center/cover; height: 500px; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+        header h1 { font-size: 4em; text-shadow: 2px 2px 4px black; }
+        header p { font-size: 1.5em; margin: 10px 0; text-shadow: 2px 2px 4px black; }
+        .btn { background: #ff5722; color: white; padding: 15px 35px; border: none; border-radius: 30px; font-size: 1.1em; cursor: pointer; margin: 10px; text-decoration: none; display: inline-block; font-weight: bold; }
+        .btn:hover { background: #e64a19; }
+        
+        /* Section */
+        section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+        h2 { text-align: center; font-size: 2.5em; margin-bottom: 40px; color: #ff5722; }
+        
+        /* Menu */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .menu-item { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: 0.3s; }
+        .menu-item:hover { transform: translateY(-10px); }
+        .menu-item img { width: 100%; height: 200px; object-fit: cover; }
+        .menu-item div { padding: 20px; }
+        .menu-item h3 { color: #ff5722; font-size: 1.4em; }
+        .price { font-size: 1.3em; font-weight: bold; color: #333; margin: 10px 0; }
+        
+        /* About */
+        .about { text-align: center; font-size: 1.1em; }
+        
+        /* Contact */
+        .contact { background: #ff5722; color: white; text-align: center; border-radius: 15px; padding: 50px 20px; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #333; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Spice Delight</h1>
+        <p>Authentic Taste, Delivered Fresh</p>
+        <a href="#menu" class="btn">View Menu</a>
+        <a href="#contact" class="btn">Order Now</a>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Us</h2>
+        <div class="about">
+            <p>Welcome to Spice Delight! We serve the best Pakistani and Continental food in town. 
+            Made with fresh ingredients and lots of love. Dine-in, Takeaway, and Delivery available.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=2071" alt="Biryani">
+                <div>
+                    <h3>Chicken Biryani</h3>
+                    <p>Fragrant basmati rice with tender chicken and special spices</p>
+                    <p class="price">Rs. 450</p>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2064" alt="Burger">
+                <div>
+                    <h3>Zinger Burger</h3>
+                    <p>Crispy chicken fillet with lettuce, cheese and mayo</p>
+                    <p class="price">Rs. 550</p>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=2069" alt="Pizza">
+                <div>
+                    <h3>Chicken Tikka Pizza</h3>
+                    <p>12 inch pizza with chicken tikka, cheese and veggies</p>
+                    <p class="price">Rs. 1200</p>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=2068" alt="Karahi">
+                <div>
+                    <h3>Chicken Karahi</h3>
+                    <p>Traditional spicy chicken karahi with naan</p>
+                    <p class="price">Rs. 800</p>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="contact" id="contact">
+            <h2 style="color:white;">Contact & Order</h2>
+            <p>Call us to place your order or visit us!</p>
+            <p style="margin-top: 20px; font-size: 1.2em;">📞 Phone: 03342187988</p>
+            <p>📍 Address: Main Street, gulshan e hadeed, karachi</p>
+            <p>⏰ Timings: 12 PM - 12 AM, 7 Days</p>
+            <a href="tel:03XXXXXXXXX" class="btn" style="background:white; color:#ff5722;">Call Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 crunch and munch Restaurant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
