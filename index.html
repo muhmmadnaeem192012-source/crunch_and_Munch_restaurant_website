@@ -54,8 +54,38 @@
         .sale-banner-bottom h3 { font-size: 24px; margin-bottom: 10px; }
         .sale-banner-bottom a { background: #25D366; color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
 
-        footer { text-align: center; padding: 20px; background: #333; color: white; }
-    </style>
+    .sale-banner-top { font-size: 13px; padding: 10px; }
+    .sale-banner-top a { display: inline-block; margin: 8px 0 0 0;}
+    footer { text-align: center; padding: 20px; background: #333; color: white; }
+
+/* Mobile Responsive - Fixed */
+@media (max-width: 768px) {
+    nav { 
+        flex-direction: column; 
+        gap: 10px; 
+        padding: 10px 15px;
+    }
+    nav h1 { font-size: 26px; }
+    nav ul { 
+        gap: 15px; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    nav a { font-size: 14px; }
+    
+    .hero { padding: 80px 15px; }
+    .hero h2 { font-size: 32px; }
+    .hero p { font-size: 16px; }
+    
+    .section { margin: 30px auto; padding: 0 15px; }
+    .section h2 { font-size: 28px; }
+    
+    .menu-grid { grid-template-columns: 1fr; }
+    
+    .sale-banner-top { font-size: 13px; padding: 10px; }
+    .sale-banner-top a { display: inline-block; margin: 8px 0 0 0; }
+}
+</style>
 </head>
 <body>
 
@@ -71,11 +101,27 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li> 
+        <li><a href="#contact"
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+</section>
 
+<!-- ABOUT US -->
+<section class="section" id="about" style="background: white; border-radius: 15px; padding: 50px 20px; margin: 40px auto; max-width: 900px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <h2>About Us</h2>
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800" alt="Restaurant" style="width: 100%; max-width: 500px; border-radius: 15px; margin: 20px 0;">
+    <p style="max-width: 700px; margin: 20px auto; font-size: 16px; color: #555; line-height: 1.8;">
+        Welcome to <b>Crunch & Munch</b> ❤️ <br><br>
+        Karachi ka sab se behtareen Fast Food & Desi Restaurant! Hum 2020 se apko serve kar rahe hain fresh, crispy aur mazedaar khana.
+    </p>
+    <a href="#menu" class="btn">Order Now</a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
     <section class="hero" id="home">
         <h2>Crave. Crunch. Repeat.</h2>
         <p>Best Burgers, Pizza & Desi Food in Karachi</p>
